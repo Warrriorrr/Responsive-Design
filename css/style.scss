@@ -1,0 +1,93 @@
+.container {
+  border: 1px solid red;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: none;
+  p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .red_box {
+    background-color: red;
+  }
+  .blue_box {
+    background-color: blue;
+  }
+  .green_box {
+    background-color: green;
+  }
+  .orange_box {
+    background-color: orange;
+  }
+  .aqua_box {
+    background-color: aqua;
+  }
+  .red_box, .blue_box, .green_box, .orange_box, .aqua_box {
+    width: 85%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    p {
+      margin-top: 2%;
+      color: white;
+      background-color: black;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .container {
+    .red_box {
+      display: none;
+    }
+  }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .container {
+    .blue_box {
+      display: none;
+    }
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .container {
+    .green_box {
+      display: none;
+    }
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .container {
+    .orange_box {
+      display: none;
+    }
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .container {
+    .aqua_box {
+      display: none;
+    }
+  }
+}
